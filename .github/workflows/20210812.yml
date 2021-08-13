@@ -1,9 +1,6 @@
 name: Run code from 2021.08.12 
 
-on:
-  push:
-    branches: [ main ]
-    
+on:    
   workflow_dispatch:
 
 jobs:
