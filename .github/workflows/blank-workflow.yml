@@ -1,0 +1,13 @@
+name: This is a blank workflow
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Console
+      run: |
+        echo "This is a new command"
