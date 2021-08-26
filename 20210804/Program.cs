@@ -6,8 +6,69 @@ namespace _20210804
 {
     class Program
     {
+
+        public static string StringFormat(string str1, string str2)
+        {
+            return $"{str1} {str2}";
+        }
+
+        public static void InputWithWhile()
+        {
+            string answer = string.Empty;
+            while(answer == string.Empty)
+            {
+                answer = Console.ReadLine();
+                if (answer == "n")
+                {
+                    Console.WriteLine("Goodbye");
+                }
+                else if (answer == "y")
+                {
+                    Console.WriteLine($"Echo: {answer}");
+                    answer = string.Empty;
+                }
+                else
+                {
+                    Console.WriteLine("please enter 'y' or 'n'");
+                }
+            }
+        }
+
+        public static void InputWithDoWhile()
+        {
+            string answer = string.Empty;
+            do
+            {
+                answer = Console.ReadLine();
+                if (answer == "n")
+                {
+                    Console.WriteLine("Goodbye");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine($"Echo: {answer}");
+                }
+            }
+            while(answer == "y");
+        }
+
+
         static void Main(string[] args)
         {
+
+            var firstName = "Paul";
+            var lastName = "Riviera";
+
+            var joinTwoStrings = StringFormat(firstName, lastName);
+            Console.WriteLine(joinTwoStrings);
+
+
+
+
+            //InputWithWhile();
+
+
            #region Console Input
 
             // var readKeyValue = Console.ReadKey();
@@ -46,8 +107,8 @@ namespace _20210804
             //}
 
             //var counter = 0;
-            //do
-            //{
+            // do
+            // {
             //    counter++;
 
             //    Console.WriteLine(greeting[i]);
@@ -60,8 +121,8 @@ namespace _20210804
 
             //    //i++;
 
-            //}
-            //while (i < greeting.Length);
+            // }
+            // while (i < greeting.Length);
 
             #endregion
 
