@@ -4,47 +4,7 @@ using System.Linq;
 
 namespace _20210901
 {
-    public class Movie
-    {
-        private string _title = "";
-        private string _category = string.Empty;
 
-        public string Title
-        {
-            get
-            {
-                return _title;
-            }
-            set
-            {
-                _title = value;
-            }
-        }
-
-        public string Category
-        {
-            get
-            {
-                return _category;
-            }
-            set
-            {
-                _category = value;
-            }
-        }
-
-        public Movie(string title, string category)
-        {
-            _title = title;
-            _category = category;
-        }
-
-        public override string ToString()
-        {
-            return $"Title: {Title} Category: {Category}";
-        }
-
-    }
 
 
     public class Program
@@ -65,7 +25,12 @@ namespace _20210901
 
         public static void Main(string[] args)
         {
-            SearchMoviesWithInput();
+            // SearchMoviesWithInput();
+
+
+
+
+
         }
 
         public static void SearchMoviesWithInput()

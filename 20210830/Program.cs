@@ -24,10 +24,6 @@ namespace _20210830
 
             #endregion
 
-
-
-
-
             #region Question and Answer Example
 
             // var shortAnswerQuestion = new ShortAnswerQuestion("What day is it?", "Monday");
