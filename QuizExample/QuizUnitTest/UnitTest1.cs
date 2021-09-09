@@ -19,15 +19,15 @@ namespace QuizUnitTest
             // }
         }
 
-        // [TestMethod]
-        // public void CreateTrueFalseQuestion()
-        // {
-        //     IQuestion q1 = QuestionFactory.NewQuestion(QuestionFactory.QuestionType.TrueOrFalse);
+        [TestMethod]
+        public void CreateShortAnswerQuestion()
+        {
+            IQuestion q1 = QuestionFactory.NewQuestion(QuestionFactory.QuestionType.ShortAnswer);
 
-        //     if (q1.GetType() != typeof(TrueOrFalse))
-        //     {
-        //         throw new Exception();
-        //     }
-        // } 
+            if (q1.GetType() != typeof(ShortAnswer))
+            {
+                throw new Exception();
+            }
+        } 
     }
 }
