@@ -7,7 +7,7 @@ namespace _20210916
         static void Main(string[] args)
         {
             Console.WriteLine("Hello!");
-            Console.WriteLine("World!");
+            Console.WriteL
         }
     }
 }
