@@ -6,10 +6,11 @@ namespace MockAssessment3
 {
     public class Town 
     {
-        public List<IVillager> Villagers = new List<IVillager>();
+        public List<IVillager> Villagers { get; set; }
 
         public Town()
         {
+            Villagers = new List<IVillager>();
             Villagers.Add(new Farmer());
             Villagers.Add(new Slacker());
             Villagers.Add(new Slacker());
