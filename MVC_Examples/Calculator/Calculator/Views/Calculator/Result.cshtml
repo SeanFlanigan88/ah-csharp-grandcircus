@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Result";
+
+    //ViewData["calculation"] = calculation;
+    //ViewBag.Operation = calculation.operation;
+    //ViewData["Result"] = result;
+
+    var calculation = (Calculation)ViewData["calculation"];
+}
+
+<h1>Calculation Result of @calculation.num1 and @calculation.num2</h1>
+<br />
+<h1>@ViewData["Result"]</h1>
+<h2>@ViewBag.Operation</h2>
+<br />
+@Html.ActionLink("Return to Index", "Index")
