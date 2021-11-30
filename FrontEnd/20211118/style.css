@@ -1,0 +1,17 @@
+p {
+    color: red;
+    font-size: 15px;
+}
+
+.whateverIwant {
+    color: blue;
+    font-size: 30px;
+    margin: 50px;
+    border: 5px solid purple;
+    padding: 20px;
+}
+
+#SendMeToGoogle {
+    border: 1px dashed darkorange;
+    padding: 12px;
+}

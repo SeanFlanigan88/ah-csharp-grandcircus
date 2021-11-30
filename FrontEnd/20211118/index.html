@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h5>
+        <span id="secondary">5</span>
+        <span id="operation">+</span>
+    </h5>
+    <h1 id="main">
+        5
+    </h1>
+    <div>
+        <button onclick="input('9')">9</button>
+        <button onclick="input('8')">8</button>
+        <button onclick="input('7')">7</button>
+        <button onclick="setOperation('/')">/</button>
+    </div>
+    <div>
+        <button onclick="input('6')">6</button>
+        <button onclick="input('5')">5</button>
+        <button onclick="input('4')">4</button>
+        <button onclick="setOperation('*')">*</button>
+    </div>
+    <div>
+        <button onclick="input('3')">3</button>
+        <button onclick="input('2')">2</button>
+        <button onclick="input('1')">1</button>
+        <button onclick="setOperation('-')">-</button>
+    </div>
+    <div>
+        <button onclick="input('0')">0</button>
+        <button onclick="setOperation('+')">+</button>
+    </div>
+
+
+    <button onclick="calculate()">Equals</button>
+    <button onclick="setup()">Clear</button>
+
+    <script src="sample.js"></script>
+</body>
+</html>
