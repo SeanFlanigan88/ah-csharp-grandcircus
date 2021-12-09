@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ArticlePreview } from '../models/article-preview';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { ArticlePreview } from '../../models/article-preview';
 import { Router } from '@angular/router';
+import { LoggerService } from "../../services/logger.service";
 
 @Component({
   selector: 'app-article-preview',
@@ -10,17 +11,20 @@ import { Router } from '@angular/router';
 export class ArticlePreviewComponent implements OnInit {
 
   @Input() content!: ArticlePreview;
+  @Output() newEvent = new EventEmitter<number>();
   updated: string = "5 minutes"
 
   isLinkActive: boolean = false;
   linkToArticle: string = `#`;
 
   constructor(
-    private router: Router
+    private router: Router,
+    private logSvc: LoggerService
   ) { }
 
   ngOnInit(): void {
     this.linkToArticle = `/article/${this.content.title}`
+    this.logSvc.log("ArticlePreviewComponent");
   }
 
   printArticleToConsole() {
@@ -29,6 +33,10 @@ export class ArticlePreviewComponent implements OnInit {
 
   goToArticle() {
     this.router.navigate(['article', this.content.title])
+  }
+
+  triggerOutput() {
+    this.newEvent.emit(1)
   }
 
 }

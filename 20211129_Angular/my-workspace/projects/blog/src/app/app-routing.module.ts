@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ArticlePageComponent } from './article-page/article-page.component';
-import { ArticlePreviewListComponent } from './article-preview-list/article-preview-list.component';
+import { ArticlePageComponent } from './article/article-page/article-page.component';
+import { ArticlePreviewListComponent } from './article/article-preview-list/article-preview-list.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { HomeComponent } from './home/home.component';
 

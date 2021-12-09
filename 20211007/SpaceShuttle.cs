@@ -11,11 +11,12 @@ namespace _20211007
         public SpaceShuttle()
         {
             Fuel = 0;
-            Team = new List<Crew>()
-            {
-                new Crew(name: "John", role: "Captain")
-            };
+            Team = new List<Crew>();
+            // {
+            //     new Crew(name: "John", role: "Captain")
+            // };
 
+            Team.Add(new Crew(name: "John", role: "Captain"));
             Team.Add(new Crew(name: "Diddy", role: "Chimp"));
             Team.Add(new Crew(name: "Hannah", role: "Navigator"));
         }

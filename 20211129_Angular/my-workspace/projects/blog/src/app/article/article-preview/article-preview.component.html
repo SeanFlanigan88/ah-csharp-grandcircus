@@ -5,8 +5,10 @@
           <h5 class="card-title">{{ content.title }}</h5>
           <p class="card-text">{{ content.text }}</p>
           <!-- <a href="{{ linkToArticle }}" class="btn btn-primary">Open Article</a> -->
-          <a routerLink="{{ linkToArticle }}" routerLinkActive="active" class="btn btn-primary">Open Article</a>
+          <!-- <a routerLink="{{ linkToArticle }}" routerLinkActive="active" class="btn btn-primary">Open Article</a> -->
+          <a href="{{ linkToArticle }}" class="btn btn-primary">Open Article</a>
           <button (click)="goToArticle()" class="btn btn-danger">Open Article With Router</button>
+          <button (click)="triggerOutput()" class="btn btn-warning">Increment Counter</button>
           <p class="card-text"><small class="text-muted">Last updated {{ updated }} ago</small></p>
         </div>
       </div>
